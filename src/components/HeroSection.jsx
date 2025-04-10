@@ -10,10 +10,12 @@ const HeroSection = () => {
             <img src="/assets/images/maa-baglamukhi.jpg" alt="Maa Baglamukhi" />
           </div>
           <div className="hero-text-right">
-            <h1>Maa Baglamukhi Mandir - Nalkheda, MP</h1>
-            <p>Experience the Divine Power & Miracles of Maa Baglamukhi</p>
-            <Link to="/book-puja" className="puja-btn">
-              Book a Puja
+            <h1 className="fade-in-up">जय माँ बगलामुखी</h1>
+            <p className="fade-in-up delay-1">
+              नालखेड़ा, मध्यप्रदेश में स्थित शक्तिपीठ — जहाँ होते हैं चमत्कार
+            </p>
+            <Link to="/book-puja" className="puja-btn fade-in-up delay-2">
+              Book Your Puja
             </Link>
           </div>
         </div>

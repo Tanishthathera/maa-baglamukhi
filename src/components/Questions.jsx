@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const Questions = () => {
   const [formData, setFormData] = useState({
@@ -25,10 +26,31 @@ const Questions = () => {
   return (
     <section className="questions-section">
       <div className="container">
-        <h2 className="section-title">Still Have Questions?</h2>
-        <p className="section-subtitle">Leave your number, we’ll call you back.</p>
+        <motion.h2
+          className="section-title"
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          Still Have Questions?
+        </motion.h2>
 
-        <form className="callback-form" onSubmit={handleSubmit}>
+        <motion.p
+          className="section-subtitle"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          Leave your number, we’ll call you back.
+        </motion.p>
+
+        <motion.form
+          className="callback-form"
+          onSubmit={handleSubmit}
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <input
             type="text"
             name="name"
@@ -52,7 +74,7 @@ const Questions = () => {
             onChange={handleChange}
           ></textarea>
           <button type="submit">Request Callback</button>
-        </form>
+        </motion.form>
       </div>
     </section>
   );

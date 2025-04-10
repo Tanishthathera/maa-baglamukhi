@@ -1,11 +1,29 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const BookPuja = () => {
   return (
     <section className="book-puja-section">
       <div className="container">
-        <h2 className="section-title">Book a Puja</h2>
-        <form className="puja-form">
+        <motion.h2
+          className="section-title"
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          Book a Divine Puja
+        </motion.h2>
+
+        <p className="section-subtitle">
+          Invoke the blessings of Maa Baglamukhi through a spiritual ceremony.
+        </p>
+
+        <motion.form
+          className="puja-form"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
+        >
           <input type="text" placeholder="Full Name" required />
           <input type="tel" placeholder="Mobile Number" required />
           <input type="email" placeholder="Email Address" required />
@@ -18,8 +36,8 @@ const BookPuja = () => {
           </select>
           <input type="date" required />
           <textarea placeholder="Additional Info or Questions..."></textarea>
-          <button type="submit">Book Now</button>
-        </form>
+          <button type="submit">📿 Book Now</button>
+        </motion.form>
       </div>
     </section>
   );

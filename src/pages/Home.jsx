@@ -1,4 +1,5 @@
-import Reaact from 'react';
+import React from "react";
+import { Helmet } from "react-helmet-async";
 import HeroSection from "../components/HeroSection";
 import AboutMaa from "../components/AboutMaa";
 import HistoryMiracles from "../components/HistoryMiracles";
@@ -17,6 +18,14 @@ import ContactInfo from "../components/ContactInfo";
 const Home = () => {
   return (
     <> 
+    <Helmet>
+        <title>Maa Baglamukhi Mandir, Nalkheda | Home</title>
+        <meta
+          name="description"
+          content="Welcome to the official website of Maa Baglamukhi Mandir, Nalkheda. Book online pujas, read about miracles, and connect with Pandit Ji."
+        />
+      </Helmet>
+
       <HeroSection />
       <AboutMaa />
       <HistoryMiracles />
