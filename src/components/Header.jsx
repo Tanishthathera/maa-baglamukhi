@@ -8,26 +8,37 @@ const Header = () => {
   const closeMenu = () => setMenuOpen(false);
 
   return (
-    <header className="header">
-      <div className="container header-container">
-        {/* <h1 className="logo">Maa Baglamukhi</h1> */}
+    <>
+      <header className="header">
+        <div className="container header-container">
 
-        {/* Hamburger */}
-        <div className={`hamburger ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
-          <span className="bar top"></span>
-          <span className="bar middle"></span>
-          <span className="bar bottom"></span>
+          {/* Hamburger Icon */}
+          <div
+            className={`hamburger ${menuOpen ? "open" : ""}`}
+            onClick={toggleMenu}
+          >
+            <span className="bar top"></span>
+            <span className="bar middle"></span>
+            <span className="bar bottom"></span>
+          </div>
+
+          {/* Background Overlay Behind Menu */}
+      {menuOpen && (
+        <div className="menu-overlay" onClick={closeMenu}></div>
+      )}
+
+          {/* Navigation Menu */}
+          <nav className={`nav ${menuOpen ? "nav-open" : ""}`}>
+            <Link to="/" onClick={closeMenu}>Home</Link>
+            <Link to="/book-puja" onClick={closeMenu}>Book Puja</Link>
+            <Link to="/contact" onClick={closeMenu}>Contact</Link>
+            <Link to="/astrology" onClick={closeMenu}>Astrology</Link>
+          </nav>
         </div>
+      </header>
 
-        {/* Nav Links */}
-        <nav className={`nav ${menuOpen ? "nav-open" : ""}`}>
-          <Link to="/" onClick={closeMenu}>Home</Link>
-          <Link to="/book-puja" onClick={closeMenu}>Book Puja</Link>
-          <Link to="/contact" onClick={closeMenu}>Contact</Link>
-          <Link to="/astrology" onClick={closeMenu}>Astrology</Link>
-        </nav>
-      </div>
-    </header>
+      
+    </>
   );
 };
 

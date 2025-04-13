@@ -12,7 +12,7 @@ const HeroSection = () => {
           <div className="hero-text-right">
             <h1 className="fade-in-up">जय माँ बगलामुखी</h1>
             <p className="fade-in-up delay-1">
-              नालखेड़ा, मध्यप्रदेश में स्थित शक्तिपीठ — जहाँ होते हैं चमत्कार
+              नलखेड़ा, मध्यप्रदेश में स्थित शक्तिपीठ — जहाँ होते हैं चमत्कार
             </p>
             <Link to="/book-puja" className="puja-btn fade-in-up delay-2">
               Book Your Puja
