@@ -16,7 +16,7 @@ const Footer = () => {
     <footer className="site-footer">
       <div className="divine-aura-bg"></div>{" "}
       {/* Optional floating aura effect */}
-      <div className="container">
+      
         <div className="footer-links">
           {["/", "/book-puja", "/contact", "/astrology"].map((path, i) => (
             <motion.div
@@ -47,7 +47,7 @@ const Footer = () => {
           © {new Date().getFullYear()} Maa Baglamukhi Mandir, Nalkheda. All
           rights reserved.
         </motion.p>
-      </div>
+      
     </footer>
   );
 };

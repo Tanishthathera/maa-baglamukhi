@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const HistoryMiracles = () => {
   return (
     <section className="history-miracles">
-      <div className="container">
+      
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -69,7 +69,7 @@ const HistoryMiracles = () => {
         >
           The temple holds special importance during <strong>Navratri</strong>, when powerful rituals like <em>Baglamukhi Anushthan</em> are performed for spiritual upliftment, peace, and prosperity.
         </motion.p>
-      </div>
+      
     </section>
   );
 };

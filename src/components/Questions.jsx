@@ -25,7 +25,7 @@ const Questions = () => {
 
   return (
     <section className="questions-section">
-      <div className="container">
+      
         <motion.h2
           className="section-title"
           initial={{ opacity: 0, y: -30 }}
@@ -75,7 +75,7 @@ const Questions = () => {
           ></textarea>
           <button type="submit">Request Callback</button>
         </motion.form>
-      </div>
+      
     </section>
   );
 };

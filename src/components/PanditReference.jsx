@@ -23,39 +23,37 @@ const references = [
 const PanditReference = () => {
   return (
     <section className="pandit-reference">
-      <div className="container">
-        <motion.h2
-          className="section-title"
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          Pandit Ji's Puja Experience
-        </motion.h2>
+      <motion.h2
+        className="section-title"
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        Pandit Ji's Puja Experience
+      </motion.h2>
 
-        <motion.p
-          className="section-subtitle"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
-          Trusted across India and globally for sacred rituals
-        </motion.p>
+      <motion.p
+        className="section-subtitle"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
+        Trusted across India and globally for sacred rituals
+      </motion.p>
 
-        <div className="references">
-          {references.map((ref, idx) => (
-            <motion.div
-              className="reference-card"
-              key={idx}
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.3 + idx * 0.2 }}
-            >
-              <h3>{ref.title}</h3>
-              <p>{ref.desc}</p>
-            </motion.div>
-          ))}
-        </div>
+      <div className="references">
+        {references.map((ref, idx) => (
+          <motion.div
+            className="reference-card"
+            key={idx}
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.3 + idx * 0.2 }}
+          >
+            <h3>{ref.title}</h3>
+            <p>{ref.desc}</p>
+          </motion.div>
+        ))}
       </div>
     </section>
   );

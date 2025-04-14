@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const PanditServices = () => {
   return (
     <section className="pandit-section">
-      <div className="container">
+      
         <motion.h2
           className="section-title"
           initial={{ opacity: 0, y: -30 }}
@@ -54,7 +54,7 @@ const PanditServices = () => {
             </ul>
           </motion.div>
         </div>
-      </div>
+      
     </section>
   );
 };

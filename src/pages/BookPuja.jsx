@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const BookPuja = () => {
   return (
     <section className="book-puja-section">
-      <div className="container">
+      
         <motion.h2
           className="section-title"
           initial={{ opacity: 0, y: -30 }}
@@ -38,7 +38,7 @@ const BookPuja = () => {
           <textarea placeholder="Additional Info or Questions..."></textarea>
           <button type="submit">📿 Book Now</button>
         </motion.form>
-      </div>
+      
     </section>
   );
 };
