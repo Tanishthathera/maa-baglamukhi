@@ -1,33 +1,27 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const AboutMaa = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="about-maa">
       <div className="about-container">
+        {/* Left Image */}
         <div className="about-image">
           <img
-            src="/assets/images/maa-yantra.png"
-            alt="Maa Baglamukhi Yantra"
+            src="/assets/images/maa-yantra.jpg"
+            alt={t("aboutMaa.imageAlt")}
           />
         </div>
-        <div className="about-text">
-          <h2>About Maa Baglamukhi</h2>
-          <p>
-            Maa Baglamukhi, also known as Pitambara Maa, is one of the ten
-            Mahavidyas (wisdom goddesses) in Hinduism. She holds divine power to
-            silence negative energies and bless her devotees with victory,
-            stability, and peace.
-          </p>
-          <p>
-            The holy shrine at Nalkheda, Madhya Pradesh, draws thousands who
-            seek divine blessings, protection from enemies, and fulfillment of
-            their wishes.
-          </p>
 
-          <div className="mantra-highlight">
-            “ॐ ह्लीं बगलामुखि सर्वदुष्टानां वाचं मुखं पदं स्तम्भय जिव्हाम कीलय
-            बुद्धिं विनाशय ह्लीं ॐ स्वाहा॥”
-          </div>
+        {/* Right Text Content */}
+        <div className="about-text">
+          <h2>{t("aboutMaa.title")}</h2>
+          <p>{t("aboutMaa.para1")}</p>
+          <p>{t("aboutMaa.para2")}</p>
+
+          <div className="mantra-highlight">{t("aboutMaa.mantra")}</div>
         </div>
       </div>
     </section>

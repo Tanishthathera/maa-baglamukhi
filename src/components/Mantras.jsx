@@ -1,7 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Mantras = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="mantras-section">
       <motion.h2
@@ -9,47 +12,44 @@ const Mantras = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        Sacred Mantras
+        {t("mantras.heading")}
       </motion.h2>
 
+      {/* Beej Mantra */}
       <motion.div
         className="mantra-block"
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
-        <h3>🔱 Beej Mantra</h3>
-        <p className="mantra-text glow-text">
-          || ह्लीं बगलामुखि सर्वदुष्टानां वाचं मुखं पदं स्तम्भय <br />
-          जिव्हाम कीलय बुद्धिं विनाशय ह्लीं ॐ स्वाहा ||
-        </p>
+        <h3>🔱 {t("mantras.beejTitle")}</h3>
+        <p className="mantra-text glow-text">{t("mantras.beejMantra")}</p>
       </motion.div>
 
+      {/* Maha Mantra */}
       <motion.div
         className="mantra-block"
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, delay: 0.4 }}
       >
-        <h3>📿 Maha Mantra</h3>
-        <p className="mantra-text glow-text">
-          || ॐ बगलामुखि सर्वदुष्टानां वाचं मुखं पदं स्तम्भय <br />
-          जिव्हाम कीलय बुद्धिं विनाशय ह्लीं ॐ स्वाहा ||
-        </p>
+        <h3>📿 {t("mantras.mahaTitle")}</h3>
+        <p className="mantra-text glow-text">{t("mantras.mahaMantra")}</p>
       </motion.div>
 
+      {/* Benefits */}
       <motion.div
         className="mantra-block"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.6 }}
       >
-        <h3>🙏 Benefits</h3>
+        <h3>🙏 {t("mantras.benefitsTitle")}</h3>
         <ul>
-          <li>Victory over enemies</li>
-          <li>Protection from evil forces</li>
-          <li>Success in court cases</li>
-          <li>Mental peace and divine blessings</li>
+          <li>{t("mantras.benefits.0")}</li>
+          <li>{t("mantras.benefits.1")}</li>
+          <li>{t("mantras.benefits.2")}</li>
+          <li>{t("mantras.benefits.3")}</li>
         </ul>
       </motion.div>
     </section>

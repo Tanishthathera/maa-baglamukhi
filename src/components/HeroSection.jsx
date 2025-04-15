@@ -1,21 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const HeroSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="hero-section">
       <div className="hero-overlay">
         <div className="hero-content">
+          {/* Left Image */}
           <div className="hero-image-left">
-            <img src="/assets/images/maa-baglamukhi.jpg" alt="Maa Baglamukhi" />
+            <img
+              src="/assets/images/maa-baglamukhi.jpg"
+              alt={t("hero.imageAlt")}
+            />
           </div>
+
+          {/* Right Text Content */}
           <div className="hero-text-right">
-            <h1 className="fade-in-up">जय माँ बगलामुखी</h1>
-            <p className="fade-in-up delay-1">
-              नलखेड़ा, मध्यप्रदेश में स्थित शक्तिपीठ — जहाँ होते हैं चमत्कार
-            </p>
+            <h1 className="fade-in-up">{t("hero.title")}</h1>
+            <p className="fade-in-up delay-1">{t("hero.subtitle")}</p>
             <Link to="/book-puja" className="puja-btn fade-in-up delay-2">
-              Book Your Puja
+              {t("hero.bookButton")}
             </Link>
           </div>
         </div>

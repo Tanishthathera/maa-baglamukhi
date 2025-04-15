@@ -1,26 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-const assuranceData = [
-  {
-    title: "🔒 100% Authentic Puja",
-    desc: "Every ritual is performed as per Vedic Vidhi by experienced Pandit Ji.",
-  },
-  {
-    title: "📸 Live Puja Updates",
-    desc: "Get images/videos of your puja in real-time for complete transparency.",
-  },
-  {
-    title: "📿 Personalised Rituals",
-    desc: "Puja is customised as per your name, gotra, and sankalp details.",
-  },
-  {
-    title: "📞 24x7 Support",
-    desc: "Our team is always available to assist you before, during & after the puja.",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const OurAssurance = () => {
+  const { t } = useTranslation();
+  const assuranceData = t("assurance.cards", { returnObjects: true });
+
   return (
     <section className="assurance-section">
       <motion.h2
@@ -29,7 +14,7 @@ const OurAssurance = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        Our Assurance
+        {t("assurance.title")}
       </motion.h2>
 
       <motion.p
@@ -38,7 +23,7 @@ const OurAssurance = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
-        Your spiritual journey is in safe hands
+        {t("assurance.subtitle")}
       </motion.p>
 
       <div className="assurance-cards">

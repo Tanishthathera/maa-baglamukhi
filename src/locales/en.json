@@ -1,0 +1,223 @@
+{
+  "header": {
+    "home": "Home",
+    "bookPuja": "Book Puja",
+    "contact": "Contact",
+    "astrology": "Astrology","language": "हिन्दी"
+  },
+  "hero": {
+  "title": "Jai Maa Baglamukhi",
+  "subtitle": "The powerful Shaktipeeth in Nalkheda, MP — where miracles happen",
+  "bookButton": "Book Your Puja",
+  "imageAlt": "Maa Baglamukhi"
+},
+
+"aboutMaa": {
+  "title": "About Maa Baglamukhi",
+  "para1": "Maa Baglamukhi, also known as Pitambara Maa, is one of the ten Mahavidyas (wisdom goddesses) in Hinduism. She holds divine power to silence negative energies and bless her devotees with victory, stability, and peace.",
+  "para2": "The holy shrine at Nalkheda, Madhya Pradesh, draws thousands who seek divine blessings, protection from enemies, and fulfillment of their wishes.",
+  "mantra": "“ॐ ह्लीं बगलामुखि सर्वदुष्टानां वाचं मुखं पदं स्तम्भय जिव्हाम कीलय बुद्धिं विनाशय ह्लीं ॐ स्वाहा॥”",
+  "imageAlt": "Maa Baglamukhi Yantra"
+},
+
+"historyMiracles": {
+  "title": "History & Miracles",
+  "description": "The holy temple of Maa Baglamukhi in Nalkheda, Madhya Pradesh, has been a powerful spiritual center for centuries. Known for its unique energy and sacred rituals, it attracts countless devotees, saints, and seekers.",
+  "card1": {
+    "title": "Victory in Legal Matters",
+    "text": "Many devotees have won tough court cases after doing Maa Baglamukhi’s anushthan."
+  },
+  "card2": {
+    "title": "Protection from Negativity",
+    "text": "Her blessings have shielded people from evil energies, black magic, and jealousy."
+  },
+  "card3": {
+    "title": "Divine Interventions",
+    "text": "People have experienced divine signs and fulfilled wishes after sincere prayers."
+  },
+  "finalNote": "The temple holds special importance during <strong>Navratri</strong>, when powerful rituals like <em>Baglamukhi Anushthan</em> are performed for spiritual upliftment, peace, and prosperity."
+},
+
+"mantras": {
+  "heading": "Sacred Mantras",
+  "beejTitle": "Beej Mantra",
+  "beejMantra": "|| ह्लीं बगलामुखि सर्वदुष्टानां वाचं मुखं पदं स्तम्भय\nजिव्हाम कीलय बुद्धिं विनाशय ह्लीं ॐ स्वाहा ||",
+  "mahaTitle": "Maha Mantra",
+  "mahaMantra": "|| ॐ बगलामुखि सर्वदुष्टानां वाचं मुखं पदं स्तम्भय\nजिव्हाम कीलय बुद्धिं विनाशय ह्लीं ॐ स्वाहा ||",
+  "benefitsTitle": "Benefits",
+  "benefits": [
+    "Victory over enemies",
+    "Protection from evil forces",
+    "Success in court cases",
+    "Mental peace and divine blessings"
+  ]
+},
+
+"location": {
+    "heading": "Location of Maa Baglamukhi Temple",
+    "description": "Visit the divine temple located in Nalkheda, Madhya Pradesh."
+  },
+
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "Experience divinity in just 3 simple steps",
+    "steps": [
+      {
+        "number": "1",
+        "title": "Select Your Puja",
+        "desc": "Choose from a variety of Vedic pujas and rituals as per your need."
+      },
+      {
+        "number": "2",
+        "title": "Book Instantly",
+        "desc": "Fill in your details and confirm your booking in just a few clicks."
+      },
+      {
+        "number": "3",
+        "title": "Enjoy Divine Experience",
+        "desc": "Our Pandit Ji performs the puja with pure Vedic rituals and devotion."
+      }
+    ]
+  },
+
+  "milestones": {
+    "title": "Our Milestones",
+    "subtitle": "A divine journey of trust & devotion",
+    "cards": [
+      {
+        "title": "📿 10,000+ Pujas",
+        "desc": "Performed across India with complete Vedic rituals."
+      },
+      {
+        "title": "🌍 20+ Countries",
+        "desc": "Devotees from around the globe trust our services."
+      },
+      {
+        "title": "🏛️ 15+ Years",
+        "desc": "Of dedicated spiritual service by our Pandit Ji."
+      },
+      {
+        "title": "🙏 50,000+ Devotees",
+        "desc": "Connected to Maa Baglamukhi through our platform."
+      }
+    ]
+  },
+
+  "assurance": {
+    "title": "Our Assurance",
+    "subtitle": "Your spiritual journey is in safe hands",
+    "cards": [
+      {
+        "title": "🔒 100% Authentic Puja",
+        "desc": "Every ritual is performed as per Vedic Vidhi by experienced Pandit Ji."
+      },
+      {
+        "title": "📸 Live Puja Updates",
+        "desc": "Get images/videos of your puja in real-time for complete transparency."
+      },
+      {
+        "title": "📿 Personalised Rituals",
+        "desc": "Puja is customised as per your name, gotra, and sankalp details."
+      },
+      {
+        "title": "📞 24x7 Support",
+        "desc": "Our team is always available to assist you before, during & after the puja."
+      }
+    ]
+  },
+
+  "panditReference": {
+    "title": "Pandit Ji's Puja Experience",
+    "subtitle": "Trusted across India and globally for sacred rituals",
+    "cards": [
+      {
+        "title": "Shirdi Sai Mandir, Maharashtra",
+        "desc": "Conducted Navgraha Shanti Puja and Baglamukhi Anushthan in 2022."
+      },
+      {
+        "title": "Online Puja (USA, Canada, UK)",
+        "desc": "Live-streamed Hawans for international devotees via Zoom & YouTube."
+      },
+      {
+        "title": "Kalkaji Mandir, New Delhi",
+        "desc": "Performed Shatru Vinash Puja during Navratri Mahotsav."
+      },
+      {
+        "title": "Baglamukhi Peeth, Nalkheda (MP)",
+        "desc": "Specialized pujas for court cases, career success & protection rituals."
+      }
+    ]
+  },
+
+  "panditServices": {
+    "title": "Meet Our Pandit Ji",
+    "subtitle": "Your Guide for Divine Rituals",
+    "description": "Our experienced Pandit Ji has performed hundreds of powerful Baglamukhi Anushthans and Hawans across India. With deep spiritual knowledge and Vedic mastery, he guides every puja with utmost devotion and accuracy.",
+    "services": [
+      "Baglamukhi Anushthan (11 days)",
+      "Pitambara Sadhna",
+      "Baglamukhi Hawan",
+      "Tantra Removal Puja",
+      "Court Case & Enemy Defeat Puja"
+    ]
+  },
+
+  "questions": {
+    "title": "Still Have Questions?",
+    "subtitle": "Leave your number, we’ll call you back.",
+    "namePlaceholder": "Your Name",
+    "phonePlaceholder": "Phone Number",
+    "questionPlaceholder": "Your Question (optional)",
+    "button": "Request Callback",
+    "alert": "Thank you! Pandit Ji will call you soon."
+  },
+
+  "testimonials": {
+    "title": "Our Happy Devotees",
+    "subtitle": "Real experiences. Real blessings.",
+    "reviews": [
+      {
+        "name": "Rohit Sharma",
+        "location": "Indore, MP",
+        "message": "By Maa Baglamukhi's grace, I won my court case. Pandit ji’s puja truly worked wonders!"
+      },
+      {
+        "name": "Nidhi Verma",
+        "location": "Delhi",
+        "message": "Pandit ji performed the puja online with full faith. I received Maa’s blessings and got my job!"
+      },
+      {
+        "name": "Rajeev Singh",
+        "location": "Lucknow",
+        "message": "We did puja for family peace. Within a month, harmony returned to our home. Thank you Pandit ji!"
+      }
+    ]
+  },
+
+  "contact": {
+    "title": "Contact Information",
+    "subtitle": "Reach out to us for any queries or puja bookings.",
+    "addressLabel": "Address",
+    "address": "Maa Baglamukhi Mandir, Nalkheda, Agar Malwa, Madhya Pradesh, India",
+    "phoneLabel": "Phone",
+    "phone": "+91 9876543210",
+    "emailLabel": "Email",
+    "email": "panditji@maabaglamukhi.org"
+  },
+
+  "footer": {
+    "home": "Home",
+    "bookPuja": "Book Puja",
+    "contact": "Contact",
+    "astrology": "Astrology",
+    "rights": "Maa Baglamukhi Mandir, Nalkheda. All rights reserved."
+  }
+
+
+  
+
+
+
+
+
+}

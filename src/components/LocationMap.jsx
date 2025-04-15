@@ -1,7 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const LocationMap = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="location-section">
       <div className="container">
@@ -11,7 +14,7 @@ const LocationMap = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Location of Maa Baglamukhi Temple
+          {t("location.heading")}
         </motion.h2>
 
         <motion.p
@@ -20,7 +23,7 @@ const LocationMap = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Visit the divine temple located in Nalkheda, Madhya Pradesh.
+          {t("location.description")}
         </motion.p>
 
         <motion.div

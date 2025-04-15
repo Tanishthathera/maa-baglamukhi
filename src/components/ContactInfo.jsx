@@ -1,7 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const ContactInfo = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="contact-info-section">
       <div className="container">
@@ -11,7 +14,7 @@ const ContactInfo = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Contact Information
+          {t("contact.title")}
         </motion.h2>
 
         <motion.p
@@ -20,7 +23,7 @@ const ContactInfo = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Reach out to us for any queries or puja bookings.
+          {t("contact.subtitle")}
         </motion.p>
 
         <motion.div
@@ -30,18 +33,16 @@ const ContactInfo = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
         >
           <div className="contact-item">
-            <h3>📍 Address</h3>
-            <p>
-              Maa Baglamukhi Mandir, Nalkheda, Agar Malwa, Madhya Pradesh, India
-            </p>
+            <h3>📍 {t("contact.addressLabel")}</h3>
+            <p>{t("contact.address")}</p>
           </div>
           <div className="contact-item">
-            <h3>📞 Phone</h3>
-            <p>+91 9876543210</p>
+            <h3>📞 {t("contact.phoneLabel")}</h3>
+            <p>{t("contact.phone")}</p>
           </div>
           <div className="contact-item">
-            <h3>✉️ Email</h3>
-            <p>panditji@maabaglamukhi.org</p>
+            <h3>✉️ {t("contact.emailLabel")}</h3>
+            <p>{t("contact.email")}</p>
           </div>
         </motion.div>
       </div>

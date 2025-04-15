@@ -1,28 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-const reviews = [
-  {
-    name: "Rohit Sharma",
-    location: "Indore, MP",
-    message:
-      "Maa Baglamukhi ki kripa se meri court case me vijay hui. Pandit ji ne jo puja ki, usse sach me chamatkar hua!",
-  },
-  {
-    name: "Nidhi Verma",
-    location: "Delhi",
-    message:
-      "Pandit ji ne online puja karwayi, pura vishwas bana raha. Maa ka ashirwad mila aur meri job lag gayi.",
-  },
-  {
-    name: "Rajeev Singh",
-    location: "Lucknow",
-    message:
-      "Family ke grah kalesh ke liye puja karwayi. Mahine bhar me hi shaanti ka anubhav hua. Dhanyawad Pandit ji!",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const Testimonials = () => {
+  const { t, i18n } = useTranslation();
+  const reviews = t("testimonials.reviews", { returnObjects: true });
+
   return (
     <section className="testimonials">
       <motion.h2
@@ -31,7 +14,7 @@ const Testimonials = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        Our Happy Devotees
+        {t("testimonials.title")}
       </motion.h2>
 
       <motion.p
@@ -40,7 +23,7 @@ const Testimonials = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
-        Real experiences. Real blessings.
+        {t("testimonials.subtitle")}
       </motion.p>
 
       <div className="testimonial-cards">

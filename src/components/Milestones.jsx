@@ -1,26 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-const milestoneData = [
-  {
-    title: "📿 10,000+ Pujas",
-    desc: "Performed across India with complete Vedic rituals.",
-  },
-  {
-    title: "🌍 20+ Countries",
-    desc: "Devotees from around the globe trust our services.",
-  },
-  {
-    title: "🏛️ 15+ Years",
-    desc: "Of dedicated spiritual service by our Pandit Ji.",
-  },
-  {
-    title: "🙏 50,000+ Devotees",
-    desc: "Connected to Maa Baglamukhi through our platform.",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const Milestones = () => {
+  const { t } = useTranslation();
+  const milestoneData = t("milestones.cards", { returnObjects: true });
+
   return (
     <section className="milestones-section">
       <motion.h2
@@ -29,7 +14,7 @@ const Milestones = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        Our Milestones
+        {t("milestones.title")}
       </motion.h2>
 
       <motion.p
@@ -38,7 +23,7 @@ const Milestones = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
-        A divine journey of trust & devotion
+        {t("milestones.subtitle")}
       </motion.p>
 
       <div className="milestone-cards">

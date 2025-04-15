@@ -1,25 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-const steps = [
-  {
-    number: "1",
-    title: "Select Your Puja",
-    desc: "Choose from a variety of Vedic pujas and rituals as per your need.",
-  },
-  {
-    number: "2",
-    title: "Book Instantly",
-    desc: "Fill in your details and confirm your booking in just a few clicks.",
-  },
-  {
-    number: "3",
-    title: "Enjoy Divine Experience",
-    desc: "Our Pandit Ji performs the puja with pure Vedic rituals and devotion.",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const HowItWorks = () => {
+  const { t } = useTranslation();
+
+  const steps = t("howItWorks.steps", { returnObjects: true });
+
   return (
     <section className="how-it-works">
       <motion.h2
@@ -28,7 +15,7 @@ const HowItWorks = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        How It Works
+        {t("howItWorks.title")}
       </motion.h2>
 
       <motion.p
@@ -37,7 +24,7 @@ const HowItWorks = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        Experience divinity in just 3 simple steps
+        {t("howItWorks.subtitle")}
       </motion.p>
 
       <div className="steps">

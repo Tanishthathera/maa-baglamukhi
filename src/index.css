@@ -253,6 +253,31 @@ html, body {
 }
 
     
+/* Language Switch Button Style */
+.lang-switch-btn {
+  background-color: #f1c40f; /* Pitambari Yellow */
+  color: #000;
+  border: none;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: auto;
+}
+
+.lang-switch-btn:hover {
+  background-color: #d4ac0d;
+}
+
+/* Optional: On small screens */
+@media (max-width: 768px) {
+  .lang-switch-btn {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+  }
+}
 
 
   

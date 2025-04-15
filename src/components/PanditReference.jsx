@@ -1,26 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-const references = [
-  {
-    title: "Shirdi Sai Mandir, Maharashtra",
-    desc: "Conducted Navgraha Shanti Puja and Baglamukhi Anushthan in 2022.",
-  },
-  {
-    title: "Online Puja (USA, Canada, UK)",
-    desc: "Live-streamed Hawans for international devotees via Zoom & YouTube.",
-  },
-  {
-    title: "Kalkaji Mandir, New Delhi",
-    desc: "Performed Shatru Vinash Puja during Navratri Mahotsav.",
-  },
-  {
-    title: "Baglamukhi Peeth, Nalkheda (MP)",
-    desc: "Specialized pujas for court cases, career success & protection rituals.",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const PanditReference = () => {
+  const { t } = useTranslation();
+  const references = t("panditReference.cards", { returnObjects: true });
+
   return (
     <section className="pandit-reference">
       <motion.h2
@@ -29,7 +14,7 @@ const PanditReference = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        Pandit Ji's Puja Experience
+        {t("panditReference.title")}
       </motion.h2>
 
       <motion.p
@@ -38,7 +23,7 @@ const PanditReference = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        Trusted across India and globally for sacred rituals
+        {t("panditReference.subtitle")}
       </motion.p>
 
       <div className="references">
