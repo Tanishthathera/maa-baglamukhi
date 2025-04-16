@@ -14,7 +14,7 @@ const ContactInfo = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          {t("contact.title")}
+          {t("contactInfo.title")}
         </motion.h2>
 
         <motion.p
@@ -23,7 +23,7 @@ const ContactInfo = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          {t("contact.subtitle")}
+          {t("contactInfo.subtitle")}
         </motion.p>
 
         <motion.div
@@ -33,16 +33,16 @@ const ContactInfo = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
         >
           <div className="contact-item">
-            <h3>📍 {t("contact.addressLabel")}</h3>
-            <p>{t("contact.address")}</p>
+            <h3>📍 {t("contactInfo.addressLabel")}</h3>
+            <p>{t("contactInfo.address")}</p>
           </div>
           <div className="contact-item">
-            <h3>📞 {t("contact.phoneLabel")}</h3>
-            <p>{t("contact.phone")}</p>
+            <h3>📞 {t("contactInfo.phoneLabel")}</h3>
+            <p>{t("contactInfo.phone")}</p>
           </div>
           <div className="contact-item">
-            <h3>✉️ {t("contact.emailLabel")}</h3>
-            <p>{t("contact.email")}</p>
+            <h3>✉️ {t("contactInfo.emailLabel")}</h3>
+            <p>{t("contactInfo.email")}</p>
           </div>
         </motion.div>
       </div>

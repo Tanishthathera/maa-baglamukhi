@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
+import { useTranslation } from "react-i18next";
 import HeroSection from "../components/HeroSection";
 import AboutMaa from "../components/AboutMaa";
 import HistoryMiracles from "../components/HistoryMiracles";
@@ -14,16 +15,14 @@ import Testimonials from "../components/Testimonials";
 import Questions from "../components/Questions";
 import ContactInfo from "../components/ContactInfo";
 
-
 const Home = () => {
+  const { t } = useTranslation();
+
   return (
-    <> 
-    <Helmet>
-        <title>Maa Baglamukhi Mandir, Nalkheda | Home</title>
-        <meta
-          name="description"
-          content="Welcome to the official website of Maa Baglamukhi Mandir, Nalkheda. Book online pujas, read about miracles, and connect with Pandit Ji."
-        />
+    <>
+      <Helmet>
+        <title>{t("home.title")}</title>
+        <meta name="description" content={t("home.description")} />
       </Helmet>
 
       <HeroSection />
@@ -39,9 +38,8 @@ const Home = () => {
       <Testimonials />
       <Questions />
       <ContactInfo />
-
     </>
-  )
-}
+  );
+};
 
 export default Home;

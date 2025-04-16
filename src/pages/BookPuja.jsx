@@ -1,44 +1,45 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const BookPuja = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="book-puja-section">
-      
-        <motion.h2
-          className="section-title"
-          initial={{ opacity: 0, y: -30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          Book a Divine Puja
-        </motion.h2>
+      <motion.h2
+        className="section-title"
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        {t("bookPuja.title")}
+      </motion.h2>
 
-        <p className="section-subtitle">
-          Invoke the blessings of Maa Baglamukhi through a spiritual ceremony.
-        </p>
+      <p className="section-subtitle">{t("bookPuja.subtitle")}</p>
 
-        <motion.form
-          className="puja-form"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.2, duration: 0.8 }}
-        >
-          <input type="text" placeholder="Full Name" required />
-          <input type="tel" placeholder="Mobile Number" required />
-          <input type="email" placeholder="Email Address" required />
-          <select required>
-            <option value="">Select Puja Type</option>
-            <option value="Baglamukhi Anushthan">Baglamukhi Anushthan</option>
-            <option value="Sarva Karya Siddhi">Sarva Karya Siddhi</option>
-            <option value="Shatru Vinash">Shatru Vinash</option>
-            <option value="Court Case Victory">Court Case Victory</option>
-          </select>
-          <input type="date" required />
-          <textarea placeholder="Additional Info or Questions..."></textarea>
-          <button type="submit">📿 Book Now</button>
-        </motion.form>
-      
+      <motion.form
+        className="puja-form"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.2, duration: 0.8 }}
+      >
+        <input type="text" placeholder={t("bookPuja.name")} required />
+        <input type="tel" placeholder={t("bookPuja.mobile")} required />
+        <input type="email" placeholder={t("bookPuja.email")} required />
+
+        <select required>
+          <option value="">{t("bookPuja.selectPuja")}</option>
+          <option value="Baglamukhi Anushthan">{t("bookPuja.pujaTypes.anushthan")}</option>
+          <option value="Sarva Karya Siddhi">{t("bookPuja.pujaTypes.karyaSiddhi")}</option>
+          <option value="Shatru Vinash">{t("bookPuja.pujaTypes.shatruVinash")}</option>
+          <option value="Court Case Victory">{t("bookPuja.pujaTypes.courtCase")}</option>
+        </select>
+
+        <input type="date" required />
+        <textarea placeholder={t("bookPuja.message")}></textarea>
+        <button type="submit">📿 {t("bookPuja.bookNow")}</button>
+      </motion.form>
     </section>
   );
 };

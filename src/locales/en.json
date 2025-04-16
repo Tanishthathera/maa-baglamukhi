@@ -1,9 +1,10 @@
 {
   "header": {
-    "home": "Home",
-    "bookPuja": "Book Puja",
-    "contact": "Contact",
-    "astrology": "Astrology","language": "हिन्दी"
+  "home": "Home",
+  "bookPuja": "Book Puja",
+  "gallery": "Gallery",
+  "contact": "Contact",
+  "astrology": "Astrology","language": "हिन्दी"
   },
   "hero": {
   "title": "Jai Maa Baglamukhi",
@@ -194,7 +195,7 @@
     ]
   },
 
-  "contact": {
+  "contactInfo": {
     "title": "Contact Information",
     "subtitle": "Reach out to us for any queries or puja bookings.",
     "addressLabel": "Address",
@@ -211,10 +212,50 @@
     "contact": "Contact",
     "astrology": "Astrology",
     "rights": "Maa Baglamukhi Mandir, Nalkheda. All rights reserved."
+  },
+
+
+
+  "astrology": {
+    "title": "Astrology Services",
+    "comingSoon": "Coming soon... Discover personalized astrology readings, powerful remedies, and divine guidance from our expert astrologers. 🌌"
+  },
+
+
+  "bookPuja": {
+    "title": "Book a Divine Puja",
+    "subtitle": "Invoke the blessings of Maa Baglamukhi through a spiritual ceremony.",
+    "name": "Full Name",
+    "mobile": "Mobile Number",
+    "email": "Email Address",
+    "selectPuja": "Select Puja Type",
+    "pujaTypes": {
+      "anushthan": "Baglamukhi Anushthan",
+      "karyaSiddhi": "Sarva Karya Siddhi",
+      "shatruVinash": "Shatru Vinash",
+      "courtCase": "Court Case Victory"
+    },
+    "message": "Additional Info or Questions...",
+    "bookNow": "Book Now"
+  },
+
+
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Feel the divine connection ✨ Reach out for puja, hawan or blessings!",
+    "name": "Full Name",
+    "email": "Email Address",
+    "mobile": "Mobile Number",
+    "message": "Your Message to Maa Baglamukhi...",
+    "button": "Send Message",
+    "direct": "Pandit Ji’s Direct Contact"
+  },
+
+
+  "home": {
+    "title": "Maa Baglamukhi Mandir, Nalkheda | Home",
+    "description": "Welcome to the official website of Maa Baglamukhi Mandir, Nalkheda. Book online pujas, read about miracles, and connect with Pandit Ji."
   }
-
-
-  
 
 
 

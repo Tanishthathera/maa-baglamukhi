@@ -1,16 +1,16 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Astrology = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="astrology-page">
       <div className="chakra-aura"></div>
 
       <div className="container fade-in">
-        <h2 className="glow-text">🔮 Astrology Services</h2>
-        <p className="astro-subtext">
-          Coming soon... Discover personalized astrology readings, powerful
-          remedies, and divine guidance from our expert astrologers. 🌌
-        </p>
+        <h2 className="glow-text">🔮 {t("astrology.title")}</h2>
+        <p className="astro-subtext">{t("astrology.comingSoon")}</p>
       </div>
     </section>
   );

@@ -31,6 +31,9 @@ const Header = () => {
           <Link to="/book-puja" onClick={closeMenu}>
             {t("header.bookPuja")}
           </Link>
+          <Link to="/gallery" onClick={closeMenu}>
+            {t("header.gallery")}
+          </Link>
           <Link to="/contact" onClick={closeMenu}>
             {t("header.contact")}
           </Link>

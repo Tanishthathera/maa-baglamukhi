@@ -1,6 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="contact-section">
       <img
@@ -9,25 +12,20 @@ const Contact = () => {
         className="yantra-bg"
       />
 
-      <h2 className="section-title glow-text">📿 Contact Us</h2>
-      <p className="contact-subtext">
-        Feel the divine connection ✨ Reach out for puja, hawan or blessings!
-      </p>
+      <h2 className="section-title glow-text">📿 {t("contact.title")}</h2>
+      <p className="contact-subtext">{t("contact.subtitle")}</p>
 
       <form className="contact-form glass-card">
-        <input type="text" placeholder="Full Name" required />
-        <input type="email" placeholder="Email Address" required />
-        <input type="tel" placeholder="Mobile Number" required />
-        <textarea
-          placeholder="Your Message to Maa Baglamukhi..."
-          required
-        ></textarea>
-        <button type="submit">🔱 Send Message</button>
+        <input type="text" placeholder={t("contact.name")} required />
+        <input type="email" placeholder={t("contact.email")} required />
+        <input type="tel" placeholder={t("contact.mobile")} required />
+        <textarea placeholder={t("contact.message")} required></textarea>
+        <button type="submit">🔱 {t("contact.button")}</button>
       </form>
 
       <div className="contact-info">
         <p>
-          <strong>📞 Pandit Ji’s Direct Contact:</strong>
+          <strong>📞 {t("contact.direct")}:</strong>
         </p>
         <p>+91-9876543210</p>
         <p>📧 panditji@example.com</p>
