@@ -255,7 +255,17 @@
   "home": {
     "title": "Maa Baglamukhi Mandir, Nalkheda | Home",
     "description": "Welcome to the official website of Maa Baglamukhi Mandir, Nalkheda. Book online pujas, read about miracles, and connect with Pandit Ji."
+  },
+
+
+  "gallery": {
+    "heading": "Gallery of Divine Moments",
+    "all": "All",
+    "photos": "Photos",
+    "videos": "Videos",
+    "alt": "Gallery Image"
   }
+  
 
 
 
