@@ -7,6 +7,7 @@ import BookPuja from "./pages/BookPuja";
 import Contact from "./pages/Contact";
 import Astrology from "./pages/Astrology";
 import Gallery from "./pages/Gallery";
+import AboutMaaFull from "./components/AboutMaaFull";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/astrology" element={<Astrology />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/about-maa-full" element={<AboutMaaFull />} />
       </Routes>
       <Footer />
     </>

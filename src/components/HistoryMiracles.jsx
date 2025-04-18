@@ -1,7 +1,8 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { FaGavel, FaHandHoldingHeart, FaPrayingHands } from 'react-icons/fa';
-import { motion } from 'framer-motion';
+import React from "react";
+import { useTranslation } from "react-i18next";
+import { FaGavel, FaHandHoldingHeart, FaPrayingHands } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const HistoryMiracles = () => {
   const { t } = useTranslation();
@@ -76,6 +77,9 @@ const HistoryMiracles = () => {
         transition={{ delay: 0.9 }}
       >
         {t("historyMiracles.finalNote")}
+        <Link to="/about-maa-full" className="read-more-button">
+          {t("common.readMore")}
+        </Link>
       </motion.p>
     </section>
   );

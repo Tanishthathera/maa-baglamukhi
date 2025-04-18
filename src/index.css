@@ -26,8 +26,8 @@ html, body {
   left: 0;
   width: 100%;
   z-index: 999;
-  padding: 0.8rem 0;
-  backdrop-filter: blur(6px);
+  padding: 0.8rem 2rem;
+  /* backdrop-filter: blur(6px); */
   border-bottom: 1px solid rgba(255, 217, 0, 0.1);
   box-shadow: 0 0 10px rgba(255, 215, 0, 0.15);
   animation: headerFadeIn 1.2s ease-in-out;
@@ -185,6 +185,10 @@ html, body {
   .hamburger {
     display: flex;
     z-index: 1101;
+  }
+  
+  .header {
+    padding: 0.8rem 0.7rem;
   }
 
   .nav {
@@ -443,7 +447,7 @@ html, body {
 .about-image img {
   max-width: 320px;
   border-radius: 1rem;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
 }
 
 .about-text {
@@ -584,6 +588,113 @@ html, body {
   .miracle-card {
     width: 100%;
     max-width: 350px;
+  }
+}
+
+
+/* aboutMaaFull */
+
+.about-maa-full {
+  background: linear-gradient(135deg, #fdf6e3 0%, #f5f5dc 100%);
+  padding: 4rem 2rem;
+  font-family: 'Poppins', sans-serif;
+  color: #3e3e3e;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-maa-full::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 223, 186, 0.2) 0%, transparent 70%);
+  animation: divineGlow 10s infinite alternate;
+  z-index: 0;
+}
+
+@keyframes divineGlow {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotate(360deg) scale(1.2);
+    opacity: 1;
+  }
+}
+
+.about-maa-full h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #8b0000;
+  position: relative;
+  z-index: 1;
+  animation: fadeInDown 1s ease-out;
+}
+
+.about-maa-full p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-maa-full {
+    padding: 3rem 1.5rem;
+  }
+
+  .about-maa-full h1 {
+    font-size: 2rem;
+  }
+
+  .about-maa-full p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-maa-full {
+    padding: 2rem 1rem;
+  }
+
+  .about-maa-full h1 {
+    font-size: 1.75rem;
+  }
+
+  .about-maa-full p {
+    font-size: 0.95rem;
   }
 }
 

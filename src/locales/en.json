@@ -39,6 +39,18 @@
   "finalNote": "The temple holds special importance during <strong>Navratri</strong>, when powerful rituals like <em>Baglamukhi Anushthan</em> are performed for spiritual upliftment, peace, and prosperity."
 },
 
+"common": {
+    "readMore": "Read More"
+  },
+
+"aboutMaaFull": {
+    "pageTitle": "About Maa Baglamukhi - Full Details",
+    "metaDescription": "Detailed information about Maa Baglamukhi temple and its significance.",
+    "title": "About Maa Baglamukhi",
+    "content": "Full detailed content about the temple, its history, and significance."
+  },
+  
+
 "mantras": {
   "heading": "Sacred Mantras",
   "beejTitle": "Beej Mantra",

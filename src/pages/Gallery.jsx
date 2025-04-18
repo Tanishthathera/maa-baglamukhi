@@ -13,11 +13,12 @@ const Gallery = () => {
 
   useEffect(() => {
     const images = import.meta.glob(
-      "/public/assets/gallery/photos/*.{jpg,png,jpeg}",
-      { eager: true, as: "url" }
-    );
+      "/public/assets/gallery/photos/*.{jpg,png,jpeg}", {
+      eager: true,
+      as: "url",
+    });
     const videos = import.meta.glob(
-      "/public/assets/gallery/videos/*.mp4", {
+    "/public/assets/gallery/videos/*.mp4", {
       eager: true,
       as: "url",
     });
