@@ -25,65 +25,49 @@ const AboutMaaFull = () => {
           </li>
           <li>
             {t(
-              "aboutMaaFull.historyAndMiracles.ancientHistory.selfManifestedIdol"
+              "aboutMaaFull.historyAndMiracles.ancientHistory.haldiImportance"
             )}
           </li>
-          <li>
-            {t("aboutMaaFull.historyAndMiracles.ancientHistory.trishaktiForm")}
-          </li>
         </ul>
+
+        <h3>{t("aboutMaaFull.historyAndMiracles.trishaktiForm.heading")}</h3>
+        <p>{t("aboutMaaFull.historyAndMiracles.trishaktiForm.description")}</p>
+        <p>{t("aboutMaaFull.historyAndMiracles.trishaktiForm.sacredTrees")}</p>
 
         <h3>{t("aboutMaaFull.historyAndMiracles.tantricPractices.heading")}</h3>
         <ul>
           <li>
-            {t(
-              "aboutMaaFull.historyAndMiracles.tantricPractices.tantraSadhana"
-            )}
+            {t("aboutMaaFull.historyAndMiracles.tantricPractices.importance")}
           </li>
           <li>
             {t(
-              "aboutMaaFull.historyAndMiracles.tantricPractices.specialRituals"
-            )}
-          </li>
-          <li>
-            {t(
-              "aboutMaaFull.historyAndMiracles.tantricPractices.peetambaraShaktipeeth"
+              "aboutMaaFull.historyAndMiracles.tantricPractices.locationDetails"
             )}
           </li>
         </ul>
 
-        <h3>
-          {t("aboutMaaFull.historyAndMiracles.miraculousExperiences.heading")}
-        </h3>
+        <h3>{t("aboutMaaFull.historyAndMiracles.goddessForm.heading")}</h3>
         <ul>
+          <li>{t("aboutMaaFull.historyAndMiracles.goddessForm.features")}</li>
           <li>
             {t(
-              "aboutMaaFull.historyAndMiracles.miraculousExperiences.enemyObstacleRelief"
+              "aboutMaaFull.historyAndMiracles.goddessForm.scripturalReferences"
             )}
           </li>
           <li>
-            {t(
-              "aboutMaaFull.historyAndMiracles.miraculousExperiences.legalSuccess"
-            )}
-          </li>
-          <li>
-            {t(
-              "aboutMaaFull.historyAndMiracles.miraculousExperiences.businessCareerSuccess"
-            )}
+            {t("aboutMaaFull.historyAndMiracles.goddessForm.vidyaDetails")}
           </li>
         </ul>
 
         <h3>{t("aboutMaaFull.historyAndMiracles.notableVisitors.heading")}</h3>
         <ul>
-          <li>
-            {t(
-              "aboutMaaFull.historyAndMiracles.notableVisitors.politicalFigures"
-            )}
-          </li>
-          <li>
-            {t("aboutMaaFull.historyAndMiracles.notableVisitors.otherNotables")}
-          </li>
+          {t("aboutMaaFull.historyAndMiracles.notableVisitors.personalities", {
+            returnObjects: true,
+          }).map((person, index) => (
+            <li key={index}>{person}</li>
+          ))}
         </ul>
+        <p>{t("aboutMaaFull.historyAndMiracles.notableVisitors.note")}</p>
       </section>
     </>
   );

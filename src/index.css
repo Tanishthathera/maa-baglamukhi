@@ -592,17 +592,18 @@ html, body {
 }
 
 
-/* aboutMaaFull */
-
+/* AboutMaaFull */
 .about-maa-full {
-  background: linear-gradient(135deg, #fdf6e3 0%, #f5f5dc 100%);
+  background: linear-gradient(135deg, #fff8e1 0%, #fff3e0 100%);
   padding: 4rem 2rem;
   font-family: 'Poppins', sans-serif;
-  color: #3e3e3e;
+  color: #4e342e;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 
+/* ✨ Divine Glow Animation */
 .about-maa-full::before {
   content: '';
   position: absolute;
@@ -626,6 +627,7 @@ html, body {
   }
 }
 
+/* 🕉️ Headings Styling */
 .about-maa-full h1 {
   font-size: 2.5rem;
   text-align: center;
@@ -636,6 +638,16 @@ html, body {
   animation: fadeInDown 1s ease-out;
 }
 
+.about-maa-full h2,
+.about-maa-full h3 {
+  color: #ffe600;
+  margin-top: 2rem;
+  position: relative;
+  z-index: 1;
+  animation: fadeInDown 1s ease-out;
+}
+
+/* 📜 Paragraph Styling */
 .about-maa-full p {
   font-size: 1.125rem;
   line-height: 1.8;
@@ -647,6 +659,21 @@ html, body {
   animation: fadeInUp 1.5s ease-out;
 }
 
+/* 📋 List Styling */
+.about-maa-full ul {
+  list-style-type: disc;
+  padding-left: 2rem;
+  margin-top: 1rem;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.about-maa-full li {
+  margin-bottom: 0.5rem;
+}
+
+/* 🌟 Animations */
 @keyframes fadeInDown {
   from {
     opacity: 0;
@@ -669,7 +696,7 @@ html, body {
   }
 }
 
-/* Responsive Design */
+/* 📱 Responsive Design */
 @media (max-width: 768px) {
   .about-maa-full {
     padding: 3rem 1.5rem;
@@ -679,7 +706,8 @@ html, body {
     font-size: 2rem;
   }
 
-  .about-maa-full p {
+  .about-maa-full p,
+  .about-maa-full li {
     font-size: 1rem;
   }
 }
@@ -693,10 +721,12 @@ html, body {
     font-size: 1.75rem;
   }
 
-  .about-maa-full p {
+  .about-maa-full p,
+  .about-maa-full li {
     font-size: 0.95rem;
   }
 }
+
 
   
 /* Mantras */
